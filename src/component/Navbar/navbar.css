@@ -9,9 +9,21 @@
     
 }
 .logo{
-    width: 20%;
+    width: 50%;
 }
 .cart{
     color: white;
     font-size: 2.5rem;
+}
+@media screen and (max-width:500px) {
+    .navbar-container{
+        padding: 1rem 3rem;
+    }
+
+}
+@media screen and (max-width:400px) {
+    .navbar-container{
+        padding: 1rem 2rem;
+    }
+
 }

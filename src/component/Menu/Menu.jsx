@@ -20,9 +20,9 @@ const Menu = ({id, title, category, price, img, desc}) => {
                 
                 <h3>${price}</h3>
             </div>
-             <div className="desc">
+             
                 <h4>{desc}</h4>
-            </div>  
+  
             <button className='add-btn' onClick={() => AddCart(id)} >Add items {cartItemAmount > 0 && <>({cartItemAmount})</>}</button>
         </main>
         

@@ -1,0 +1,274 @@
+.image{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border: 0.25rem solid var(--clr-gold);
+    border-radius: var(--radius);
+    display: block;
+}
+.img-container{
+    width: 35%;
+ 
+}
+.cartItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    width: 100%;
+}
+.cart-items{
+    width: 80%;
+}
+.cart-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.product{
+    display: flex;
+    align-items: center;
+    height: 40%;
+    
+}
+.title{
+    margin-right: 10rem;
+}
+.cart-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+   
+}
+
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+}
+
+.form-button{
+    width: 20%;
+    border-radius: 2rem;
+    background-color: white;
+}
+.input{
+    width: 40%;
+    padding:8px;
+    background-color: white;
+    border: none;
+    text-align: center;
+    
+}
+.btn-plus{
+    padding: 8px;
+    border: none;
+    background-color: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.116);
+}
+.btn-minus{
+    padding: 8px;
+    border: none;
+    background-color: white;
+    border-left: 1px solid rgba(0, 0, 0, 0.116);
+}
+@media screen and (max-width:1700px) {
+    .price{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 230px;
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 230px;
+       
+    }
+    
+    .total{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 230px;
+    }
+
+}
+@media screen and (max-width:1400px) {
+    .price{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+       
+    }
+    
+    .total{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+    }
+
+}
+@media screen and (max-width:1250px) {
+    .price{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 180px;
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 180px;
+       
+    }
+    
+    .total{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 180px;
+    }
+
+}
+@media screen and (max-width:800px) {
+    .cart-items{
+        width: 80%;
+    }
+    .price{
+        height: 150px;
+    }
+    .form{
+        height: 150px;
+       
+    }
+    
+    .total{
+        height: 150px;
+    }
+
+}
+@media screen and (max-width:755px) {
+    .cart-btn{
+        display: grid;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .cart-items{
+        width: 95%;
+    }
+    .price{
+        height: 150px;
+        font-size: 1rem;
+    }
+    .form{
+        height: 150px;
+       
+    }
+    
+    .total{
+        height: 150px;
+        font-size: 1rem;
+    }
+
+    
+
+}
+@media screen and (max-width:500px) {
+    
+    .img-container p{
+        font-size: 0.6rem;
+    }
+    .price{
+        height: 100px;
+    }
+    .form{
+        height: 100px;
+       
+    }
+    
+    .total{
+        height: 100px;
+    }
+    
+
+
+}
+@media screen and (max-width:460px) {
+    .cart-items{
+        width: 98%;
+    }
+    .price{
+        height: 100px;
+    }
+    .form{
+        height: 100px;
+       
+    }
+    
+    .total{
+        height: 100px;
+    }
+
+    .cart-btn{
+        display: grid;
+        font-size: 1rem;
+        gap: 1rem;
+    }
+   
+
+
+}
+@media screen and (max-width:380px) {
+    .cart-items{
+        width: 98%;
+    }
+    .price{
+        height: 90px;
+    }
+    .form{
+        height: 90px;
+       
+    }
+    
+    .total{
+        height: 90px;
+    }
+   
+
+
+}

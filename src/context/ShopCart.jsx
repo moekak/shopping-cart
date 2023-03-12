@@ -16,7 +16,7 @@ export const ShopContextProvider = ({children}) =>{
     
     const [menu, setMenu] = useState(data)
     const [category, setCategory] = useState(categories)
-    const [cartItems, setCartItems] = useState((getDefaultCart()))
+    const [cartItems, setCartItems] = useState(getDefaultCart())
     const [total, setTotal] = useState('')
 
     const price = menu.map((menu) => menu.price)
@@ -44,11 +44,14 @@ export const ShopContextProvider = ({children}) =>{
         setMenu(newItems)
         
      }
+
+   
    
  
     const AddCart = (itemId) =>{
+        console.log(cartItems[itemId]);
        
-        setCartItems((prev)=> ({...prev, [itemId] : prev[itemId] + 1}))
+        setCartItems(()=> ({...cartItems, [itemId] : cartItems[itemId] + 1}))
        
      
     }
@@ -88,4 +91,3 @@ export const ShopContextProvider = ({children}) =>{
 
     )
 }
-

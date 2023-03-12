@@ -13,9 +13,11 @@ const Menus = () => {
   return (
     <div className="menu-container">
       <div className="menu-top">
-        <div className="text">
-          <h1>OREDR YOUR FAVORITES <br /> FOODS WITH CHEAP PRICE</h1>
-          <button className='btn'><a href="#menu">SEE MENU</a></button>
+        <div className="menu-img">
+          <div className="text">
+            <h1>OREDR YOUR FAVORITES <br /> FOODS WITH CHEAP PRICE</h1>
+            <button className='btn-menu'><a href="#menu" style={{ color: 'white' }} >SEE MENU</a></button>
+        </div>
         </div>
       </div>
       <div id='menu' className="menus">
@@ -27,14 +29,11 @@ const Menus = () => {
               <div>
                   <Menu key={menu.id}{...menu}/>
                   
-              </div>
-          
-              
+              </div> 
             )
           })}
         </div>
-        
-    </div>
+      </div>
     </div>
    
    
