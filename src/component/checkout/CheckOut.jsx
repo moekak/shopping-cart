@@ -40,7 +40,7 @@ const CheckOut = () => {
                 </div>
                 <div className="total-container">
                     <h4>Total</h4>
-                    <h4 style={{fontWeight: '700'}}>${total}</h4> 
+                    <h4 style={{fontWeight: '700'}}>${total > 100 ? total : total + 10}</h4> 
                 </div>
             </div>
             <Link to='/thank'>
@@ -56,12 +56,12 @@ const CheckOut = () => {
         <div className="delivery-info">
             <form class=" form-container row g-3">
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">First name</label>
-                    <input type="email" class="form-control" id="inputEmail4"/>
+                    <label for="name" class="form-label">First name</label>
+                    <input type="name" class="form-control" id="name"/>
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Last name</label>
-                    <input type="password" class="form-control" id="inputPassword4"/>
+                    <label for="name" class="name">Last name</label>
+                    <input type="name" class="form-control" id="name"/>
                 </div>
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Address</label>
